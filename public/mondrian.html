@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      background-color: lightgray;
+    }
+
+    .grid-container {
+      background-color: black;
+      height: 600px;
+      width: 800px;
+      display: grid;
+      grid-template-columns: repeat(18, 1fr);
+      grid-template-rows: 1fr 1fr 1fr 0.45fr 0.75fr 0.5fr;
+      gap: 15px;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .one {
+      grid-area: 1 / 1 / 1 / 5
+    }
+
+    .two {
+      grid-area: 1 / 5 / 1 / -6
+    }
+
+    .three {
+      grid-area: 1 / -6 / 1 / -3;
+    }
+
+    .four {
+      grid-area: 1 / -3 / 1 / -1
+    }
+
+    .five {
+      grid-area: 2 / 1 / 2 / 9;
+    }
+
+    .six {
+      grid-area: 2 / 9 / 2 / 14;
+    }
+
+    .seven {
+      grid-area: 2 / 14 / 2 / -3;
+    }
+
+    .eight {
+      grid-area: 2 / -3 / 2 / -1;
+    }
+
+    .nine {
+      grid-area: 3 / 1 / 6 / 7;
+    }
+
+    .ten {
+      grid-area: 3 / 7 / 5 / 9;
+    }
+
+    .extra {
+      grid-area: 3 / 9 / 5 / -9;
+    }
+
+    .eleven {
+      grid-area: 3 / 11 / 6 / -5;
+    }
+
+    .twelve {
+      grid-area: 3 / 15 / 4 / -1;
+    }
+
+    .thirteen {
+      grid-area: 5 / 7 / 6 / 9;
+    }
+
+    .fourteen {
+      grid-area: 5 / 9 / 6 / 11; 
+    }
+
+    .fifteen {
+      grid-area: 4 / 15 / 6 / 17;
+    }
+
+    .sixteen {
+      grid-area: 4 / 17 / 6 / -1;
+    }
+
+    .seventeen {
+      grid-area: 6 / 1 / 7 / 7;
+    }
+
+    .eighteen {
+      grid-area: 6 / 7 / 7 / 11;
+    }
+
+    .nineteen {
+      grid-area: 6 / 11 / 7 / 18;
+    }
+
+    .twenty {
+      grid-area: 6 / 18 / 7 / 19;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="grid-container">
+    <div class="white one"></div>
+    <div class="blue two"></div>
+    <div class="red three"></div>
+    <div class="white four"></div>
+    <div class="blue five"></div>
+    <div class="white six"></div>
+    <div class="yellow seven"></div>
+    <div class="red eight"></div>
+    <div class="red nine"></div>
+    <div class="red ten"></div>
+    <div class="white extra"></div>
+    <div class="yellow eleven"></div>
+    <div class="blue twelve"></div>
+    <div class="white thirteen"></div>
+    <div class="blue fourteen"></div>
+    <div class="red fifteen"></div>
+    <div class="white sixteen"></div>
+    <div class="blue seventeen"></div>
+    <div class="white eighteen"></div>
+    <div class="red nineteen"></div>
+    <div class="yellow twenty"></div>
+
+  </div>
+
+</body>
+
+</html>
