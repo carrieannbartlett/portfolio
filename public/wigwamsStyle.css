@@ -12,6 +12,7 @@ body {
     text-align: center;
     font-size: 14pt;
     background-color: #FAF9F6;
+    max-width: 100vw;
 }
 
 /* Hero section */
@@ -34,7 +35,7 @@ h1 {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 10vh;
+        font-size: 8vh;
     }
 }
 
@@ -67,23 +68,23 @@ h3 {
     left: 5%;
 }
 .star2 {
-    top: 60%;
-    left: 15%;
+    top: 70%;
+    left: 2%;
 }
 .star3 {
-    top: 55%;
-    left: 30%;
+    top: 45%;
+    left: 20%;
 }
 .star4 {
-    top: 60%;
+    top: 55%;
     left: 60%;
 }
 .star5 {
-    top: 20%;
+    top: 80%;
     left: 80%;
 }
 .star6 {
-    top: 80%;
+    top: 12%;
     left: 80%;
 }
 
@@ -172,6 +173,12 @@ h4 {
     margin-top: 20px;
 }
 
+@media (max-width: 576px) {
+    #email {
+        font-size: smaller;
+    }
+}
+
 /*Footer*/
 footer {
     height: 20vh;
@@ -208,10 +215,8 @@ footer {
     .footerContainer a {
         display: block;
         font-size: 14pt;
-        padding: 5px;
+        padding:10px;
+        text-align: right;
     }
 
-    .copyright {
-        margin-right:0;
-    }
 }
